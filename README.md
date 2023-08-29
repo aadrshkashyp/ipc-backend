@@ -5,22 +5,22 @@ Welcome to the IPC Code Manager Backend repository! This backend serves as the s
 - Clone this repository to your local machine.
 - Navigate to the `backend` folder: `cd backend`.
 - Install dependencies: `npm install`.
-- Update the API URLs in `ipcActions.js` to match your backend server URL.
-- Run the development server: `npm start`.
+- Update the MongoDB URLs, username and password in `index.js`.
+- Run the service: `node index.js`.
 
-## Features and Usage
+## Endpoints and Functions
 
-- View a list of all IPC codes and descriptions.
-- Add a new IPC code and description.
-- Delete an IPC code.
-- Update an IPC description.
+- `GET /api/ipc`: Retrieve a list of all IPC codes and descriptions..
+- `POST /api/ipc`: Add a new IPC code and description.
+- `DELETE /api/ipc/:id`: Delete an IPC code by its ID.
+- `PUT /api/ipc/:id`: Update an IPC description by its ID.
 
 ## Libraries and Technologies Used
 
-- React: A JavaScript library for building user interfaces.
-- Redux: A state management library for managing application state.
-- Axios: A promise-based HTTP client for making API requests.
-- Neumorphism UI: A modern design trend for creating soft UI elements.
+- Express.js: A web application framework for Node.js, used for routing and handling requests.
+- Mongoose: An ODM (Object Data Modeling) library for MongoDB, used for modeling and interacting with the database.
+- MongoDB Atlas: A cloud-based database service for MongoDB.
+- Cors: Middleware for enabling CORS (Cross-Origin Resource Sharing) in the server.
 
 
 ## Contributions

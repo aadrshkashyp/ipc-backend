@@ -7,11 +7,11 @@ const app = express();
 const PORT = process.env.PORT || 5960;
 
 // MongoDB connection
-mongoose.connect("mongodb+srv://ipcrti:LRHyGVtTaDpgU2Rw@ipcrti.jxxfdtg.mongodb.net/?retryWrites=true&w=majority", {
+mongoose.connect("your mongodb url here", {
   useNewUrlParser: true,
   useUnifiedTopology: true,
-  user: "ipcrti", // your MongoDB Atlas username
-  pass: "LRHyGVtTaDpgU2Rw" // your MongoDB Atlas password
+  user: "", // your MongoDB Atlas username
+  pass: "" // your MongoDB Atlas password
 })
   .then(() => console.log("MongoDB connected"))
   .catch(err => console.log(err));
